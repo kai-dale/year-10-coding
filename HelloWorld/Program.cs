@@ -11,7 +11,8 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine(Hello world)
+            Console.WriteLine("Hello world");
+            Console.ReadKey();
         }
     }
 }

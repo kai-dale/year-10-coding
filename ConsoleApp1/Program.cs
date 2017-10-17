@@ -7,7 +7,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
            
-            Console.Write("enter your name");
+            Console.Write("enter your name: ");
             string name = Console.ReadLine();
             Console.WriteLine("welcome to my program " + name);
 
