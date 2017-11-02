@@ -29,7 +29,9 @@ namespace rockpaperscissors
 
         private static void printscore(ref int userscore, ref int computerscore)
         {
-            throw new NotImplementedException();
+            Console.Clear();
+            Console.WriteLine("user: " + userscore + "  computer: " + computerscore);
+
         }
 
         private static bool playagain()
@@ -54,7 +56,7 @@ namespace rockpaperscissors
 
         private static void givefeedback(string result, string userchoice, string computerchoice)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"win! you chose rock and the computer chose scissors!");
         }
 
         private static string determinewinner(string userchoice, string computerchoice)
@@ -69,7 +71,7 @@ namespace rockpaperscissors
                 {
                     return "win";
                 }
-                else if (userchoice == "scissors")
+                else
                 {
                     return "win";
                 }
@@ -84,14 +86,14 @@ namespace rockpaperscissors
                 {
                     return "draw";
                 }
-                else if (userchoice == "scissors")
+                else
                 {
                     return "lose";
                 }
             }
-            else if (computerchoice == "scissors")
-        }
-        if (computerchoice == "rock")
+            else
+            {
+                if (computerchoice == "rock")
                 {
                     return "lose";
                 }
@@ -99,19 +101,51 @@ namespace rockpaperscissors
                 {
                     return "win";
                 }
-                else if (userchoice == "scissors")
+                else
                 {
                     return "draw";
                 }
+            }
+        }
 
         private static string computerturn()
         {
-            throw new NotImplementedException();
+            Random rnd = new Random();
+            int choice = rnd.Next(1, 4);
+
+            if (choice == 1)
+            {
+                return "rock";
+            }
+            else if (choice == 2)
+            {
+                return "paper";
+            }
+            else
+            {
+                return "scissors";
+            }
+
         }
 
         private static string userturn()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("1. rock");
+            Console.WriteLine("2. paper");
+            Console.WriteLine("3. scissors");
+            int choice = int.Parse(Console.ReadLine());
+            if (choice == 1)
+            {
+                return "rock";
+            }
+            else if (choice == 2)
+            {
+                return "paper";
+            }
+            else
+            {
+                return "scissors";
+            }
         }
     }
 }
