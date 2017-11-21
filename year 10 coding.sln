@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "insult generator", "insult 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "babyblackjack", "babyblackjack\babyblackjack.csproj", "{F5C53B14-96E8-496B-9D06-056B26B42CC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classes", "classes\classes.csproj", "{09F35C54-7BAC-4C35-97AB-2E1579C7FE3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{F5C53B14-96E8-496B-9D06-056B26B42CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5C53B14-96E8-496B-9D06-056B26B42CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5C53B14-96E8-496B-9D06-056B26B42CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F35C54-7BAC-4C35-97AB-2E1579C7FE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F35C54-7BAC-4C35-97AB-2E1579C7FE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F35C54-7BAC-4C35-97AB-2E1579C7FE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F35C54-7BAC-4C35-97AB-2E1579C7FE3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

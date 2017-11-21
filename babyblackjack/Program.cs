@@ -69,9 +69,12 @@ namespace babyblackjack
         private static void payout(bool playerwins, float betamount, ref float money)
         {
             if (playerwins)
+            {
+                money = money + (betamount * 2);
+
+            }
         }
-        money = money + (betamount * 2);
-        {
+        
 
 
         private static bool determinewinner(int player, int dealer)
